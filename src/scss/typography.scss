@@ -1,0 +1,34 @@
+@import 'rfs/scss';
+
+h1, .h1 {
+  @include font-size(2.1rem);
+  @include margin-bottom(1.5rem);
+  font-weight: 700;
+}
+
+h2, .h2 {
+  @include font-size(1.6rem);
+  @include margin-bottom(1.5rem);
+  font-weight: 700;
+}
+
+h3, .h3 {
+  @include font-size(1.4rem);
+  @include margin-bottom(1.5rem);
+  font-weight: 500;
+}
+
+h4, .h4 {
+  @include font-size(1.1rem);
+  @include margin-bottom(1.5rem);
+  font-weight: 500;
+}
+
+p {
+  @include font-size(1.0rem);
+
+  &.lead {
+    @include font-size(1.2rem);
+  }
+}
+

@@ -1,16 +1,20 @@
-header {
+@import 'rfs/scss';
+
+.header {
   display: flex;
-  justify-content: center;
-  color: #222222;
+  align-items: center;
+  gap: 1rem;
+  height: 60px;
   font-weight: 700;
-  font-size: 1.2rem;
+  @include margin-bottom(1.2rem);
+
+  &__theme-toggle {
+    margin-left: auto;
+  }
+
+  &__slogan {
+    @include font-size(1.6rem);
+  }
 }
 
-.light {
-  background-color: antiquewhite;
-}
 
-.dark {
-  background-color: #222222;
-  color: antiquewhite;
-}

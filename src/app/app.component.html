@@ -1,4 +1,75 @@
-<app-header [slogan]="headerSlogan" [theme]="theme"></app-header>
-<p>Content of your main page goes here.</p>
+<main class="wrapper container-fluid" [ngClass]="getTheme()">
 
-<router-outlet></router-outlet>
+  <app-header [slogan]="headerSlogan" [isFullWidth]="false" [ngClass]="getTheme()"></app-header>
+
+
+
+  <div class="container">
+    <div class="row">
+      <hr>
+
+
+      <h1>H1 | RFS | Responsive font size test</h1>
+      <h2>H2 | RFS | Responsive font size test</h2>
+      <h3>H3 | RFS | Responsive font size test</h3>
+      <h4>H4 | RFS | Responsive font size test</h4>
+
+      <div class="col-12 col-lg-6">
+        <p>
+          Eleifend aliquam aptent congue potenti faucibus condimentum condimentum dictum ullamcorper, suspendisse
+          dapibus
+          dolor. Eget id gravida condimentum penatibus nec est elit. Augue nullam turpis libero ornare scelerisque,
+          quisque urna massa dis imperdiet pharetra morbi. Consequat interdum sit aliquet ipsum ultricies nisi rhoncus
+          dapibus et nam dapibus eget. Elementum arcu porta himenaeos ornare sodales penatibus netus habitasse cursus
+          libero sollicitudin luctus. Pulvinar viverra nullam diam orci amet aliquam nulla volutpat sociosqu, mattis
+          posuere augue? Morbi interdum molestie felis est ad. Lectus sociosqu tellus sagittis; imperdiet imperdiet
+          morbi
+          id? Class a quisque interdum, sodales at venenatis convallis malesuada.
+        </p>
+        <p>
+          Tincidunt mollis per, himenaeos consequat curabitur? Commodo bibendum parturient blandit vivamus auctor arcu
+          pretium himenaeos nam fusce nullam. Pretium laoreet consectetur adipiscing felis sed cras, nascetur accumsan.
+          Id
+          erat convallis felis arcu! Quis eget hendrerit cubilia egestas tincidunt. Vel arcu libero phasellus netus
+          fames
+          penatibus vestibulum pharetra augue vestibulum. Nisl mauris fusce id amet nunc pretium ridiculus cum tincidunt
+          mollis vitae. Sociosqu per posuere mollis rhoncus consequat sit, lacinia dis blandit parturient tincidunt.
+          Tristique eget, sed.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+
+        <p>
+          Blandit placerat torquent rhoncus pharetra torquent aptent, porttitor auctor posuere torquent risus est. A
+          lobortis iaculis lobortis nec cursus elementum dignissim. Inceptos rhoncus cum dui tempus nec risus dictum
+          habitant mi adipiscing vestibulum. Tincidunt ac enim pharetra. Aliquam tempus ullamcorper nam, vehicula
+          aliquet
+          orci vehicula condimentum fermentum consequat. Gravida hac odio nam accumsan rutrum nascetur duis primis? Dis
+          aliquet eu suscipit accumsan. Egestas massa pretium consectetur nisl mi magnis. Consectetur, nec erat platea
+          posuere eleifend donec elementum. Sociis lobortis fermentum pellentesque congue ultricies consequat sagittis
+          rutrum.
+        </p>
+        <p>
+          Accumsan nulla hac adipiscing, commodo ullamcorper venenatis pretium. Fames tellus amet netus? Convallis sed
+          sagittis natoque tincidunt curabitur magnis cras fermentum. Justo dis natoque auctor primis. Ultrices magnis
+          lorem est dignissim facilisis auctor consequat taciti platea ad ad. Arcu montes congue lacinia pellentesque,
+          libero interdum praesent vitae auctor primis dui. Condimentum consequat iaculis eros mauris metus etiam tempor
+          himenaeos arcu, quisque dolor sed. Dictumst volutpat placerat habitasse varius potenti auctor placerat id?
+          Sollicitudin ut fames felis? Ipsum consequat fringilla proin vitae lectus taciti rhoncus.
+        </p>
+        <p>
+          Accumsan ante integer semper. Blandit mus sociosqu, facilisis turpis magnis volutpat. Felis nec at iaculis.
+          Dignissim molestie interdum augue dolor quis posuere maecenas eget? At nisi, odio conubia sed. Per eleifend
+          nascetur dis. Platea quam conubia elementum ac ac conubia. Facilisis pharetra nascetur, dignissim eu lorem
+          class. Rhoncus consectetur vulputate quam. Praesent sociis accumsan sed dapibus ac nostra vehicula vestibulum!
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+</main>
+
+

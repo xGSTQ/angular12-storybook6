@@ -1,3 +1,17 @@
-<header [ngClass]="theme">
-  <p>{{ slogan }}</p>
+<header class="header" [class.container]="!isFullWidth" [ngClass]="getTheme()">
+
+  <div class="d-none d-sm-block">
+    <svg width="78" height="32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" [style.fill]="getLogoColor(1)"></path>
+      <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" [style.fill]="getLogoColor(2)"></path>
+      <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" [style.fill]="getLogoColor(3)"></path>
+    </svg>
+  </div>
+
+  <div class="header__slogan">{{ slogan }}</div>
+
+  <div class="header__theme-toggle">
+    <app-theme-toggle></app-theme-toggle>
+  </div>
+
 </header>

@@ -1,0 +1,39 @@
+// Common Colors
+$white: #FFF;
+$black: #000;
+$gray-light: #CCC;
+$gray-dark: #333;
+
+// Light Theme
+$light-bg: $white;
+$light-text: $gray-dark;
+$light-primary: #007BFF;
+$light-accent: #FF6C5F;
+
+// Dark Theme
+$dark-bg: $black;
+$dark-text: $white;
+$dark-primary: #007BFF;
+$dark-accent: #FF6C5F;
+
+
+:root {
+  // Light Theme
+  --main-color-light: $light-bg;
+  --primary-color-light: $light-text;
+
+   // Dark Theme
+  --main-color-dark: $dark-bg;
+  --primary-color-dark: $dark-text;
+
+  // Logo
+  --logo-primary-light: #FF7A00;
+  --logo-secondary-light: #FF9736;
+  --logo-tertiary-light: #FFBC7D;
+
+  --logo-primary-dark: #CCC;
+  --logo-secondary-dark: #999;
+  --logo-tertiary-dark: #333;
+}
+
+$transition: 300ms;

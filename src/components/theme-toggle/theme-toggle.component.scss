@@ -1,0 +1,117 @@
+@import '../../scss/variables';
+
+$light-toggle-bg: #FFF;
+$light-border: #CCCCCC;
+$light-input: #FFF;
+$light-active-list: #D9D9D9;
+$light-toggle-moon: #000;
+$light-toggle-sun: var(--logo-primary-light);
+
+$dark-toggle-bg: #000;
+$dark-border: #333;
+$dark-input: #111;
+$dark-active-list: #444;
+$dark-toggle-moon: #CCC;
+$dark-toggle-sun: var(--logo-primary-dark);
+
+$transition: 300ms;
+
+.theme-toggle {
+  $root: &;
+
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+  & input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + #{$root}__slider::before {
+      transform: translateX(26px);
+    }
+  }
+
+  &.light {
+    #{$root}__slider {
+      background-color: $light-toggle-bg;
+      border: 2px solid $light-border;
+
+      &::before {
+        background: $light-active-list;
+      }
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+  }
+
+  &.dark {
+    #{$root}__slider {
+
+      &::before {
+        background: $dark-active-list;
+      }
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $dark-toggle-bg;
+    border: 2px solid $dark-border;
+    transition: $transition;
+    border-radius: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 2px;
+      bottom: 2px;
+      background: $dark-input;
+      transition: $transition;
+      border-radius: 50%;
+    }
+
+    &.round {
+      &::before {
+        background: $dark-active-list;
+      }
+    }
+  }
+}
+
+.bi {
+  font-size: 18px;
+  position: absolute;
+  top: 6%;
+
+  &.bi-moon-fill {
+    left: 10%;
+    color: $dark-toggle-moon;
+  }
+
+  &.bi-sun-fill {
+    left: 58%;
+    color: $dark-toggle-sun;
+  }
+
+  label.light & {
+    &.bi-moon-fill {
+      color: $light-toggle-moon;
+    }
+
+    &.bi-sun-fill {
+      color: $light-toggle-sun;
+    }
+  }
+}
