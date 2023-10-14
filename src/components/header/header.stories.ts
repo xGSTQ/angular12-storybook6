@@ -22,9 +22,11 @@ const Template: Story<HeaderComponent> = (args) => ({
 export const LightHeader = Template.bind({});
 LightHeader.args = {
   slogan: 'Light Header',
+  isFullWidth: false
 };
 
 export const DarkHeader = Template.bind({});
 DarkHeader.args = {
   slogan: 'Dark Header',
+  isFullWidth: true
 };

@@ -45,4 +45,4 @@ testem.log
 Thumbs.db
 
 #Storybook
-storybook-static
+/storybook-static
