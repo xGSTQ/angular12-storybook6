@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: center;
+  color: #222222;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.light {
+  background-color: antiquewhite;
+}
+
+.dark {
+  background-color: #222222;
+  color: antiquewhite;
+}
