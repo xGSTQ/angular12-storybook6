@@ -4,8 +4,22 @@ $black: #000;
 $gray-light: #CCC;
 $gray-dark: #333;
 
+// Shades of White
+$white-1: #FAFAFA;
+$white-2: #EAEAEA;
+$white-3: #D1D1D1;
+$white-4: #B0B0B0;
+$white-5: #808080;
+
+// Shades of Black
+$black-1: #333333;
+$black-2: #666666;
+$black-3: #999999;
+$black-4: #B0B0B0;
+$black-5: #D1D1D1;
+
 // Light Theme
-$light-bg: $white;
+$light-bg: $white-2;
 $light-text: $gray-dark;
 $light-primary: #007BFF;
 $light-accent: #FF6C5F;
@@ -16,6 +30,8 @@ $dark-text: $white;
 $dark-primary: #007BFF;
 $dark-accent: #FF6C5F;
 
+// Transitions
+$transition: 300ms;
 
 :root {
   // Light Theme
@@ -36,4 +52,4 @@ $dark-accent: #FF6C5F;
   --logo-tertiary-dark: #333;
 }
 
-$transition: 300ms;
+

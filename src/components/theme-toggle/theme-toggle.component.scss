@@ -1,18 +1,14 @@
 @import '../../scss/variables';
 
-$light-toggle-bg: #FFF;
-$light-border: #CCCCCC;
-$light-input: #FFF;
-$light-active-list: #D9D9D9;
-$light-toggle-moon: #000;
-$light-toggle-sun: var(--logo-primary-light);
+$light-toggle-bg: $light-bg;
+$light-border: darken($light-bg, 15%);
+$light-moon-icon: darken($light-bg, 100%);
+$light-sun-icon: #FF7A00;
 
-$dark-toggle-bg: #000;
-$dark-border: #333;
-$dark-input: #111;
-$dark-active-list: #444;
-$dark-toggle-moon: #CCC;
-$dark-toggle-sun: var(--logo-primary-dark);
+$dark-toggle-bg: $dark-bg;
+$dark-border: lighten($dark-bg, 15%);
+$dark-moon-icon: lighten($dark-bg, 95%);
+$dark-sun-icon: lighten($dark-bg, 55%);
 
 $transition: 300ms;
 
@@ -23,6 +19,7 @@ $transition: 300ms;
   display: inline-block;
   width: 60px;
   height: 34px;
+  border-radius: 50%;
 
   & input[type="checkbox"] {
     opacity: 0;
@@ -40,7 +37,7 @@ $transition: 300ms;
       border: 2px solid $light-border;
 
       &::before {
-        background: $light-active-list;
+        background: $light-border;
       }
     }
 
@@ -53,7 +50,7 @@ $transition: 300ms;
     #{$root}__slider {
 
       &::before {
-        background: $dark-active-list;
+        background: $dark-border;
       }
     }
   }
@@ -77,15 +74,8 @@ $transition: 300ms;
       width: 26px;
       left: 2px;
       bottom: 2px;
-      background: $dark-input;
       transition: $transition;
       border-radius: 50%;
-    }
-
-    &.round {
-      &::before {
-        background: $dark-active-list;
-      }
     }
   }
 }
@@ -97,21 +87,21 @@ $transition: 300ms;
 
   &.bi-moon-fill {
     left: 10%;
-    color: $dark-toggle-moon;
+    color: $dark-moon-icon;
   }
 
   &.bi-sun-fill {
     left: 58%;
-    color: $dark-toggle-sun;
+    color: $dark-sun-icon;
   }
 
   label.light & {
     &.bi-moon-fill {
-      color: $light-toggle-moon;
+      color: $light-moon-icon;
     }
 
     &.bi-sun-fill {
-      color: $light-toggle-sun;
+      color: $light-sun-icon;
     }
   }
 }
