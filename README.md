@@ -1,6 +1,6 @@
 # Angular 12 & Storybook 6
 
-This test was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.17 and Storybook Angular version 6.3.0-beta.11 I wanted to test for compatability for Angular 12 and Storybook versioning.
+This test was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.17 and Storybook Angular version 6.5.16 I wanted to test for compatability for Angular 12 and Storybook versioning.
 
 ## Installation
 
